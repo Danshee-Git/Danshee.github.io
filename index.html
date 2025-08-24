@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Mi IndieWeb</title>
-</head>
-<body>
-  <h1>¡Hola! Soy Charlie 😎</h1>
-  <p>Este es mi espacio en la IndieWeb 🚀</p>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MiMarca</div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="hero" id="inicio">
+        <h1>Bienvenido a MiMarca</h1>
+        <p>Soluciones digitales para tu negocio</p>
+        <a href="#contacto" class="cta-btn">Contáctanos</a>
+      </div>
+    </header>
+    <section class="servicios" id="servicios">
+      <h2>Nuestros Servicios</h2>
+      <div class="servicios-lista">
+        <div class="servicio">
+          <h3>Diseño Web</h3>
+          <p>Webs modernas, rápidas y responsivas.</p>
+        </div>
+        <div class="servicio">
+          <h3>Marketing Digital</h3>
+          <p>Impulsa tu marca en redes sociales y buscadores.</p>
+        </div>
+        <div class="servicio">
+          <h3>Consultoría</h3>
+          <p>Te ayudamos a crecer con tecnología.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="formMsg"></div>
+    </section>
+    <footer>
+      <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
